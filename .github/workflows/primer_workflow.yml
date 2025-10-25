@@ -1,4 +1,18 @@
-name: CI Simple
+#Codigo inicial
+# name: CI Simple
+# on: [push]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout código
+#         uses: actions/checkout@v3
+#       - name: Ejecutar script
+#         run: echo '¡Hola desde GitHub Actions!'
+
+#ejecutable desde paso 5
+name: CI con Shell
 on: [push]
 
 jobs:
@@ -7,5 +21,7 @@ jobs:
     steps:
       - name: Checkout código
         uses: actions/checkout@v3
-      - name: Ejecutar script
-        run: echo '¡Hola desde GitHub Actions!'
+
+      - name: Ejecutar script Shell
+        run: ./script.sh
+
